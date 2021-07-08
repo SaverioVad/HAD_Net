@@ -1,0 +1,7 @@
+__pycache__ 
+models/__pycache__ 
+utils/__pycache__
+*.pth
+*.npy
+!trained_examples/*.pth
+!trained_examples/*.npy
