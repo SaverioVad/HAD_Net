@@ -651,7 +651,7 @@ def main():
         os.chdir(original_dir)
 
         # Run model on testing set.
-        mean_test_loss, mean_dice_scores, vm_info = validation_epoch(generator_model, testset, n_softmax, 0.0, [], device)
+        mean_test_loss, mean_dice_scores, vm_info = validation_epoch(generator_model, criterion_CE, testset, n_softmax, 0.0, [], device, epoch)
 
         mean_dice_NET, mean_dice_ED, mean_dice_ET, mean_dice_WT, mean_dice_TC = mean_dice_scores
         testing_vm_list, running_vm, corrected_vm = vm_info
